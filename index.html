@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./assets/images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>
+      Frontend Mentor | Newsletter sign-up form with success message
+    </title>
+  </head>
+  <body>
+    <div class="newsletter-cta" id="newsletter">
+      <picture>
+        <source
+          media="(min-width: 650px)"
+          srcset="assets/images/illustration-sign-up-desktop.svg"
+        />
+        <img src="assets/images/illustration-sign-up-mobile.svg" />
+      </picture>
+
+      <div class="content">
+        <h1 class="title">Stay Updated</h1>
+        <p>Join 60,000+ product managers receiving monthly updates on:</p>
+        <ul role="list" class="checkmark-list">
+          <li>Product discovery and building what matters</li>
+          <li>Measuring to ensure updates are a success</li>
+          <li>And much more!</li>
+        </ul>
+        <form id="form">
+          <div class="form-group with-error-field">
+            <label for="email">Email Address</label>
+            <span class="error">Email Address Required</span>
+            <input
+              type="email"
+              name="email"
+              id="email"
+              placeholder="email@company.com"
+            />
+          </div>
+          <button id="subscribe-button" class="button">
+            Subscribe to monthly newsletter
+          </button>
+        </form>
+      </div>
+    </div>
+    <div class="success hidden" id="success">
+      <div class="success-info">
+        <img src="/assets/images/icon-success.svg" alt="" />
+        <h1 class="title">Thanks for subscribing!</h1>
+        <p>
+          A confirmation email has been sent to
+          <span>ash@loremcompany.com.</span> Please open it and click the button
+          inside to confirm your subscription.
+        </p>
+      </div>
+      <button id="dismiss-button" class="button">Dismiss Message</button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
